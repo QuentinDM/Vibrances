@@ -1,0 +1,18 @@
+.faq-list {
+  display: grid;
+  gap: 14px;
+  padding: 88px 0px;
+}
+
+details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--cream-light);
+  padding: 20px 24px;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--bordeaux-dark);
+  font-weight: 700;
+}

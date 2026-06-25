@@ -1,0 +1,19 @@
+:root {
+  --cream: #fff9ef;
+  --bordeaux: #6B1F2E;
+  --b06: rgba(70,19,30,0.06);
+  --b10: rgba(70,19,30,0.10);
+  --b18: rgba(70,19,30,0.18);
+  --b40: rgba(70,19,30,0.40);
+  --b65: rgba(70,19,30,0.65);
+  --bordeaux-dark: #46131e;
+  --cream-light: #fff9ef;
+  --gold: #b08d57;
+  --gold-active: #b08c57c2;
+  --ink: #2f2321;
+  --muted: #786762;
+  --line: rgba(107, 31, 46, 0.18);
+  --shadow: 0 24px 70px rgba(70, 19, 30, 0.12);
+  font-family: 'Jost', sans-serif;
+  background: var(--cream);
+}

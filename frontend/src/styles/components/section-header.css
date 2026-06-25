@@ -1,0 +1,120 @@
+.section-header {
+    background: var(--bordeaux);
+    text-align: center;
+    padding: 64px 24px 52px;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+.section-header::before,
+  .section-header::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 51%;
+    background: var(--cream);
+    z-index: 2;
+    will-change: transform;
+  }
+
+.section-header::before {
+    left: 0;
+    transform-origin: left center;
+  }
+
+.section-header::after {
+    right: 0;
+    transform-origin: right center;
+  }
+
+.section-header:not(.is-revealed)::before,
+  .section-header:not(.is-revealed)::after {
+    transform: scaleX(1);
+  }
+
+.section-header.is-revealed::before {
+    animation: sh-curtain-left 1.1s 0.15s cubic-bezier(.77, 0, .18, 1) forwards;
+  }
+
+.section-header.is-revealed::after {
+    animation: sh-curtain-right 1.1s 0.15s cubic-bezier(.77, 0, .18, 1) forwards;
+  }
+
+.section-header__eyebrow,
+  .section-header__title,
+  .section-header__rule {
+    position: relative;
+    z-index: 3;
+  }
+
+.section-header__eyebrow {
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.20em;
+    color: rgba(255, 249, 239, 0.50);
+    margin-bottom: 14px;
+    opacity: 0;
+  }
+
+.section-header__title,
+  .section-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.15;
+    margin: 0 0 18px;
+    opacity: 0;
+  }
+
+.section-header__rule {
+    width: 0;
+    height: 1px;
+    background: rgba(255, 249, 239, 0.28);
+    margin: 0 auto;
+    opacity: 0;
+  }
+
+.section-header.is-revealed .section-header__eyebrow {
+    animation: sh-fade-up 0.55s 1.05s ease forwards;
+  }
+
+.section-header.is-revealed .section-header__title {
+    animation: sh-fade-up 0.65s 1.20s ease forwards;
+  }
+
+.section-header.is-revealed .section-header__rule {
+    animation: sh-expand-rule 0.65s 1.42s ease forwards;
+  }
+
+@keyframes sh-curtain-left {
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(0); }
+  }
+
+@keyframes sh-curtain-right {
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(0); }
+  }
+
+@keyframes sh-fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+@keyframes sh-expand-rule {
+    from { width: 0; opacity: 0; }
+    to   { width: 40px; opacity: 1; }
+  }
+
+@media (prefers-reduced-motion: reduce) {
+    .section-header::before,
+    .section-header::after { display: none; }
+    .section-header__eyebrow,
+    .section-header__title { opacity: 1; transform: none; animation: none; }
+    .section-header__rule { width: 40px; opacity: 1; animation: none; }
+  }

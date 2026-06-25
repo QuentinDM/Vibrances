@@ -1,0 +1,101 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #fff9ef 0%,
+    #f5e8d0 25%,
+    #e8d0b8 50%,
+    #d4b8a0 70%,
+    #b89080 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 90px 24px 180px;
+  gap: 24px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--bordeaux);
+  letter-spacing: -0.01em;
+}
+
+.hero-subtitle {
+  max-width: 520px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--bordeaux);
+  opacity: 0.78;
+}
+
+.mountains-wrap {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero p {
+  max-width: 720px;
+  font-size: 1.22rem;
+  color: var(--bordeaux);
+  font-weight: 400;
+}
+
+.hero h1 {
+  font-size: clamp(3.2rem, 6.2vw, 5.7rem);
+}
+
+/**********************************************/
+/*                mid-deskstop                */
+/**********************************************/
+
+
+/**********************************************/
+/*                Tablet                      */
+/**********************************************/
+
+
+/**********************************************/
+/*                Phone                      */
+/**********************************************/
+@media (max-width: 370px) {
+  .button-row {
+    justify-content: center;
+  }
+}

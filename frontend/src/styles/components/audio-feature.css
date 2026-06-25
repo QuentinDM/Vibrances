@@ -1,0 +1,183 @@
+.audio-feature,
+.faq-list {
+  width: min(1120px, calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.audio-feature-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.audio-card-content {
+  display: grid;
+    grid-template-columns: 220px 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.audio-card__cover {
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    width: 220px;
+  }
+
+.audio-card__cover img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+    background: #ffe4ba;
+  }
+
+.audio-card__cover:hover img { transform: scale(1.04); }
+
+.audio-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 86px clamp(18px, 5vw, 60px);
+}
+
+.audio-card {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+  background: var(--bordeaux);
+  color: var(--cream);
+}
+
+.play-symbol {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--bordeaux-dark);
+  font-size: 1rem;
+}
+
+.audio-card span {
+  display: block;
+  color: rgba(255, 249, 239, 0.72);
+}
+
+.audio-card audio {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.streaming-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.streaming-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  min-height: 52px;
+  width: 100%;
+  padding: 10px 18px;
+  border: 1px solid var(--bordeaux);
+  border-radius: 4px;
+  color: var(--bordeaux);
+  font-weight: 700;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.streaming-button:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 24px rgba(70, 19, 30, 0.12);
+}
+
+.streaming-button:active {
+  background: var(--cream);
+  border-color: var(--bordeaux);
+  color: var(--bordeaux);
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 6px 14px rgba(70, 19, 30, 0.1);
+}
+
+.streaming-button:hover .streaming-icon {
+  animation: iconPop 420ms ease;
+}
+
+.streaming-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-grid;
+  place-items: center;
+}
+
+.streaming-icon i {
+  display: block;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.streaming-button.youtube .streaming-icon {
+  color: #ff0033;
+}
+
+.streaming-button.spotify .streaming-icon {
+  color: #1db954;
+}
+
+@keyframes iconPop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.18) rotate(-4deg);
+  }
+}
+
+/**********************************************/
+/*                mid-deskstop                */
+/**********************************************/
+
+/**********************************************/
+/*                Tablet                      */
+/**********************************************/
+@media (max-width: 900px) {
+  .hero,
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .audio-feature-title {
+    margin-bottom: 15px;
+}
+
+  .audio-card-content {
+    grid-template-columns: 1fr;
+  }
+
+  .audio-card__cover {
+    display: none;
+  }
+
+  .streaming-links {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+}

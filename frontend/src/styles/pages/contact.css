@@ -1,0 +1,518 @@
+.cs {
+    background: #fff9ef;
+    padding: 80px 24px 88px;
+    font-family: 'Jost', sans-serif;
+  }
+
+.cs-grid {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+.planning{
+  background: rgba(70, 19, 30, 0.09);
+  height: 100%;
+  padding: 32px 28px;
+  border-radius: 0 20px 20px 0;
+  border: 1px solid rgba(70, 19, 30, 0.08);
+}
+
+.calendar-ui h4 {
+  font-size: 1.1rem;
+  margin: 16px 0;
+  color: var(--b65);
+  text-align: center;
+}
+
+.divide-line-calendar {
+  width: 70px;
+  height: 1px;
+  background: var(--b65);
+  margin: 0 auto;
+}
+
+.calendar-ui .react-calendar {
+  width: 100%;
+  background: var(--cream);
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  padding: 15px;
+  margin-top: 16px;
+}
+
+.calendar-ui .react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 10px;
+}
+
+.calendar-ui .react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bordeaux);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.calendar-ui .react-calendar__navigation button:hover,
+.calendar-ui .react-calendar__navigation button:focus {
+  background-color: var(--gold-active);
+  color: var(--cream);
+}
+
+.calendar-ui .react-calendar__navigation button:disabled {
+  cursor: default;
+  background-color: var(--cream);
+  color: var(--cream);
+}
+
+.calendar-ui .react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--bordeaux);
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.calendar-ui .react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none; /* Enlève le soulignement par défaut */
+}
+
+.calendar-ui .react-calendar__tile {
+  max-width: 100%;
+  padding: 12px 0px;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--bordeaux);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.calendar-ui .react-calendar__tile:enabled:hover,
+.calendar-ui .react-calendar__tile:enabled:focus {
+  background-color: var(--gold);
+  color: var(--cream);
+}
+
+.calendar-ui .react-calendar__tile--now {
+  border: 1px solid var(--gold);
+  font-weight: 700;
+  color: var(--gold-active);
+}
+
+.calendar-ui .react-calendar__tile--active,
+.calendar-ui .react-calendar__tile--active:enabled:hover,
+.calendar-ui .react-calendar__tile--active:enabled:focus {
+  background: var(--gold-active) ;
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.calendar-ui .react-calendar__tile:disabled {
+  background-color: #d2d2d229;
+  color: #cecece;
+  cursor: not-allowed;
+  border-radius: inherit;
+}
+
+.calendar-ui .react-calendar__month-view__days__day--weekend:disabled {
+  background-color: #fff5f5;
+  color: #feb2b2;
+}
+
+.calendar-ui .react-calendar__month-view__days__day--neighboringMonth {
+  color: #6060604d;
+}
+
+.tp-wrap { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 12px; 
+    margin-top: 16px;
+  }
+
+.tp-drum-outer { 
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    gap: 6px; 
+  }
+
+.tp-drum-col { 
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 6px; 
+  }
+
+.tp-drum-col-label { 
+    font-size: 0.68rem; 
+    font-weight: 500; 
+    letter-spacing: 0.16em; 
+    text-transform: uppercase; 
+  }
+
+.tp-drum-arrow { 
+    width: 32px; 
+    height: 32px; 
+    border-radius: 50%; 
+    border: 1.5px solid var(--bordeaux); 
+    background: var(--cream);  
+    cursor: pointer; 
+    color: var(--bordeaux); 
+    font-size: 12px; 
+    transition: background 0.15s; 
+    user-select: none; 
+  }
+
+.tp-drum-arrow:hover { 
+    background: rgba(70,19,30,0.06); 
+    color: #46131e; 
+  }
+
+.tp-drum-window { 
+    width: 90%; 
+    padding: 8px 0;
+    border-radius: 8px; 
+    background: var(--cream); 
+  }
+
+.drum-number { 
+    text-align: center;
+  }
+
+.tp-drum-sep { 
+    font-size: 2rem; 
+  }
+
+.divide-line-form {
+    width: 70px;
+    height: 1px;
+    background: var(--cream);
+    margin: 0 auto;
+  }
+
+.cs-meet {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 20px 0 0 20px;
+    padding: 32px 28px;
+    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+.cs-meet::before {
+    content: '';
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: var(--b10);
+    top: -60px; right: -60px;
+    pointer-events: none;
+  }
+
+.cs-meet::after {
+    content: '';
+    position: absolute;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: var(--b10);
+    bottom: -40px; left: -30px;
+    pointer-events: none;
+  }
+
+.cs-meet h3 {
+    color: var(--cream);
+    font-weight: 600;
+    text-align: center;
+  }
+
+.cs-calendar-title {
+    font-weight: 600;
+    text-align: center;
+  }
+
+.cs-nl-desc {
+    font-size: 0.89rem;
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+  }
+
+.cs-info-grid {
+    max-width: 980px;
+    margin: 24px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+.cs-info-card {
+    background: rgba(70,19,30,0.05);
+    border: 1px solid rgba(70,19,30,0.09);
+    border-radius: 18px;
+    padding: 24px 24px 20px;
+    transition: background 0.22s, transform 0.22s, box-shadow 0.22s;
+    cursor: default;
+  }
+
+.cs-info-card:hover {
+    background: rgba(70,19,30,0.09);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(70,19,30,0.10);
+  }
+
+.cs-info-card__head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+.cs-info-card__icon {
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    background: rgba(70,19,30,0.08);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+.cs-info-card__icon i {
+    color: #46131e;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+.cs-info-card__value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #46131e;
+    letter-spacing: 0.02em;
+  }
+
+.cs-info-card__desc {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: rgba(70,19,30,0.50);
+  }
+
+.cs-legal {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: rgba(70,19,30,0.04);
+    border: 1px solid rgba(70,19,30,0.09);
+    margin-top: 4px;
+    grid-column: 1 / 4;
+  }
+
+.cs-legal i {
+    color: rgba(70,19,30,0.40);
+    font-size: 15px;
+    line-height: 1;
+    flex-shrink: 0; margin-top: 1px;
+  }
+
+.cs-legal__text {
+    font-size: 0.75rem;
+    line-height: 1.65;
+    color: rgba(70,19,30,0.50);
+    letter-spacing: 0.01em;
+  }
+
+.cs-legal__links {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+  }
+
+.cs-legal__link {
+    font-size: 0.73rem;
+    font-weight: 500;
+    color: rgba(70,19,30,0.55);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid rgba(70,19,30,0.20);
+    padding-bottom: 1px;
+    transition: color 0.18s, border-color 0.18s;
+  }
+
+.cs-legal__link:hover {
+    color: #46131e;
+    border-color: #46131e;
+  }
+
+.cs-schedule-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    position: relative;
+    z-index: 2;
+  }
+
+.cs-schedule-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+.cs-schedule-form label input {
+    padding: 12px 14px;
+    border: none;
+    border-bottom: 2px solid var(--cream);
+    background: rgba(255, 249, 239, 0.08);
+    border-radius: 4px 4px 0 0;
+    outline: none;
+    transition: border-color 0.28s ease, background 0.28s ease, box-shadow 0.28s ease;
+  }
+
+.cs-schedule-form label select {
+    color: var(--cream);
+    cursor: pointer;
+    padding: 12px 14px;
+    border: none;
+    appearance: none;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 2px solid var(--cream);
+    background-color: rgba(255, 249, 239, 0.08);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FFF9EF' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+  }
+
+.cs-schedule-form label input::placeholder {
+    color: rgba(255, 255, 255, 0.3); ;
+  }
+
+.cs-schedule-form label select:focus {
+    color: var(--cream);
+    background: rgba(255, 249, 239, 0.12);
+    border-bottom-color: rgba(255, 249, 239, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+.cs-schedule-form label select:focus-visible {
+     outline: none;
+  }
+
+.cs-schedule-form label select option {
+    color: #000000;
+  }
+
+.cs-schedule-form label input:hover,
+  .cs-schedule-form label select:hover {
+    background: rgba(255, 249, 239, 0.1);
+    border-bottom-color: rgba(255, 249, 239, 0.5);
+  }
+
+.cs-schedule-form button[type="submit"] {
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 13px 32px;
+    border: 2px solid rgba(255, 249, 239, 0.4);
+    border-radius: 8px;
+    background: rgba(255, 249, 239, 0.12);
+    color: var(--cream);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.28s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+.cs-schedule-form button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 249, 239, 0.15);
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+
+.cs-schedule-form button[type="submit"]:hover {
+    background: rgba(255, 249, 239, 0.18);
+    border-color: rgba(255, 249, 239, 0.7);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+
+.cs-schedule-form button[type="submit"]:hover::before {
+    left: 0;
+  }
+
+.cs-schedule-form button[type="submit"]:active {
+    transform: translateY(1px) scale(0.98);
+  }
+
+
+/**********************************************/
+/*                mid-deskstop                */
+/**********************************************/
+@media (max-width: 1200px) {
+  .cs-info-card {
+    padding: 24px 16px 20px; 
+  }
+
+  .cs-info-card__head {
+    gap: 8px;
+  }
+
+  .cs-info-card__value {
+    letter-spacing: 0;
+  }
+}
+
+
+/**********************************************/
+/*                Tablet                      */
+/**********************************************/
+@media (max-width: 720px) {
+  .cs-meet {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .planning {
+    border-radius: 0 0 20px 20px ;
+  }
+
+  .cs-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .cs-info-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .cs-legal {
+    grid-column: auto;
+  }
+}
+/**********************************************/
+/*                Phone                      */
+/**********************************************/

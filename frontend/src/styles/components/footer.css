@@ -1,0 +1,59 @@
+.site-footer {
+  display: grid;
+  gap: 32px;
+  padding: 64px clamp(18px, 6vw, 84px);
+  background: var(--bordeaux);
+  color: var(--cream-light);
+  text-align: center;
+}
+
+.site-footer-hero {
+  display: grid;
+  gap: 28px;
+}
+
+.site-footer-brand {
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+}
+
+.site-footer-tagline {
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.site-footer-cta {
+  margin-top: 12px;
+}
+
+.site-footer-bottom { 
+  border-top: 1px solid rgba(255, 249, 239, 0.08);
+  border-bottom: 1px solid rgba(255, 249, 239, 0.08);
+  padding: 24px 0;
+  color: var(--cream-light);
+  font-size: 0.9rem;
+}
+
+.site-footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 12px;
+}
+
+.site-footer-legal a {
+  color: rgba(255, 249, 239, 0.68);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.site-footer-legal a:hover,
+.site-footer-legal a:focus {
+  color: var(--cream-light);
+  text-decoration: underline;
+}
