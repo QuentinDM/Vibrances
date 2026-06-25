@@ -16,17 +16,14 @@ export function ScheduleMeetingForm({ date, time }) {
   const emailRef = useRef();// utilisée pour le focus en cas d'erreur de validation
   const phoneRef = useRef();// utilisée pour le focus en cas d'erreur de validation
 
-  const pad = (value) => String(value).padStart(2, "0");
+  const formatDateTime = (date, time) =>
+  new Date(`${date}T${time}:00`).toISOString();
 
-  const formatDateTime = (valueDate, valueTime) =>
-    `${valueDate} ${valueTime}:00`;
-
-  const getEndingAt = (valueDate, valueTime, minutes) => {
-    const dateTime = new Date(`${valueDate}T${valueTime}`);
-    dateTime.setMinutes(dateTime.getMinutes() + Number(minutes));
-
-    return `${dateTime.getFullYear()}-${pad(dateTime.getMonth() + 1)}-${pad(dateTime.getDate())} ${pad(dateTime.getHours())}:${pad(dateTime.getMinutes())}:00`;
-  }; 
+  const getEndingAt = (date, time, minutes) => {
+    const d = new Date(`${date}T${time}:00`);
+    d.setMinutes(d.getMinutes() + Number(minutes));
+    return d.toISOString();
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
