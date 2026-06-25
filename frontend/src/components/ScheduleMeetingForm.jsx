@@ -88,7 +88,7 @@ export function ScheduleMeetingForm({ date, time }) {
 
       const data = await response.json();
 
-      if (!response.ok || !data || data.result !== "success") {
+      if (!response.ok || data.result !== "success") {
         toast.dismiss();
         toast.error("Erreur de réservation.");
       } else {
