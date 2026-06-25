@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 const API_URL = import.meta.env.VITE_API_URL;
 
 export function ScheduleMeetingForm({ date, time }) {
-  const duration = useState("30");
+  const [duration] = useState("30");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
