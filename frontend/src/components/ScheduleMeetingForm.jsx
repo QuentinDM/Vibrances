@@ -71,6 +71,8 @@ export function ScheduleMeetingForm({ date, time }) {
     try {
       const starting_at = formatDateTime(date, time);
       const ending_at = getEndingAt(date, time, duration);
+      setSubmitting(true);
+      toast.loading("Réservation en cours...");
 
       const response = await fetch(`${API_URL}/api/kmeet/rooms`, {
         method: "POST",
@@ -86,14 +88,14 @@ export function ScheduleMeetingForm({ date, time }) {
 
       const data = await response.json();
 
-      if (!response.ok || data.result !== "success") {
+      if (!response.ok || !data || data.result !== "success") {
         toast.dismiss();
         toast.error("Erreur de réservation.");
       } else {
         toast.dismiss();
         toast.success("Rendez-vous confirmé !");
         try {
-          fetch(`${API_URL}/api/bookings`, {
+          await fetch(`${API_URL}/api/bookings`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -108,12 +110,12 @@ export function ScheduleMeetingForm({ date, time }) {
             type: isB2B,
           })
         });
-        } catch {
+        } catch (err) {
           toast.dismiss();
           toast.error("Erreur lors de la soumission du formulaire.");
         }
       }
-    } catch {
+    } catch (err) {
       toast.dismiss();
       toast.error("Erreur réseau.");
     } finally {
