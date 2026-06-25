@@ -97,6 +97,7 @@ app.use("/api", emailRoute);
 /* ========================= */
 
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-  console.log(`Le serveur est en cours d’exécution sur le port http://localhost:${PORT}.`);
+  console.log(`Serveur en cours d'exécution sur le port ${PORT}`);
 });
