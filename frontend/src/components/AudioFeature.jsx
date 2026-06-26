@@ -24,7 +24,7 @@ export function AudioFeature({ showStreamingLinks = false }) {
         </div>
       </div>
       <p>
-        Prenez quelques instants pour écouter un extrait du répertoire de Flo Misdelma.
+        Prenez quelques instants pour écouter un extrait du répertoire de Misdelma.
       </p>
       <div>
         {showStreamingLinks && (
