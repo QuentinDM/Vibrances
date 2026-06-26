@@ -15,7 +15,7 @@ export function AudioFeature({ showStreamingLinks = false }) {
         <div className="audio-card">
           <div className="play-symbol" aria-hidden="true">▶</div>
           <div>
-            <strong>Extrait à venir</strong>
+            <strong>Extrait : le bohneur</strong>
             <span>Composition originale - VIBRANCES</span>
           </div>
           <audio controls preload="none" aria-label="Extrait audio VIBRANCES">
