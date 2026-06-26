@@ -48,7 +48,7 @@ export function PrivacyPolicy() {
             <li><strong>Droit de portabilité :</strong> Vous pouvez récupérer vos données dans un format structuré</li>
             <li><strong>Droit d'opposition :</strong> Vous pouvez vous opposer au traitement de vos données</li>
           </ul>
-          <p>Pour exercer ces droits, contactez-nous à <strong>contact@vibrances.fr</strong>.</p>
+          <p>Pour exercer ces droits, contactez-nous à <strong>vibrances82@gmail.com</strong>.</p>
 
           <h2>7 - Sécurité</h2>
           <p>VIBRANCES met en place les mesures de sécurité appropriées pour protéger vos données contre les accès non autorisés et les fuites.</p>

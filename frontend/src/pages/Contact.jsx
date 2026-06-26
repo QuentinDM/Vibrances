@@ -51,9 +51,9 @@ export function Contact() {
               <div className="cs-info-card__icon">
                 <i className="fa-solid fa-phone" aria-hidden="true"></i>
               </div>
-              <span className="cs-info-card__value">+33 (0)6 66 66 66   66</span>
+              <span className="cs-info-card__value">+33 (0)6 16 27 69 17 </span>
             </div>
-            <p className="cs-info-card__desc">Disponible du lundi au  vendredi, de 9h à 18h pour échanger sur vos projets.</p>
+            <p className="cs-info-card__desc">Disponible du lundi au samedi, de 9h à 18h pour échanger sur vos projets.</p>
           </div>
 
           <div className="cs-info-card">
@@ -61,7 +61,7 @@ export function Contact() {
               <div className="cs-info-card__icon">
                 <i className="fa-solid fa-envelope" aria-hidden="true"></i>
               </div>
-              <span className="cs-info-card__value">contact@vibrances.fr</span>
+              <span className="cs-info-card__value">vibrances82@gmail.com</span>
             </div>
             <p className="cs-info-card__desc">Réponse assurée sous  48h pour toute demande de collaboration ou de devis.</p>
           </div>
