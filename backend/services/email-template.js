@@ -1,6 +1,6 @@
 import { brevo } from "../config/brevo.js";
 
-export async function sendEmails({ firstName, lastName, email, phone, date, time, type }) {
+export async function sendEmails({ firstName, lastName, email, phone, date, time }) {
 const htmlMailUser = `
 <!-- EMAIL CLIENT -->
 <div class="panel active" id="panel-client" style="font-family:'Jost', sans-serif;">
@@ -60,7 +60,7 @@ const htmlMailUser = `
        <tr>
          <td style="padding:24px 40px 0;">
            <p style="margin:0;font-size:14px;color:rgba(70,19,30,0.60);line-height:1.75;">En cas d'empêchement, n'hésitez pas à me contacter directement.</p>
-           <p style="margin:0;font-size:14px;color:rgba(70,19,30,0.60);line-height:1.75;">f.vibrances@gmail.com</p>
+           <p style="margin:0;font-size:14px;color:rgba(70,19,30,0.60);line-height:1.75;">vibrances82@gmail.com</p>
          </td>
        </tr>
  
@@ -79,7 +79,7 @@ const htmlMailUser = `
          <td style="padding:24px 40px;text-align:center;">
            <p style="margin:0 0 8px;font-size:12px;font-style:italic;color:#6B1F2E;">Vibrances — L'écriture au service des maux</p>
            <p style="margin:0;font-size:11px;color:rgba(70,19,30,0.38);line-height:1.6;">
-             Montauban, France - f.vibrances@gmail.com<br/>
+             Montauban, France - vibrances82@gmail.com<br/>
            </p>
            <p style="margin:10px 0 0;font-size:10px;color:rgba(70,19,30,0.28);">© 2026 Vibrances — Tous droits réservés</p>
          </td>
@@ -125,10 +125,6 @@ const htmlEmailAdmin = `
                     <td width="50%" style="padding-bottom:14px;">
                       <p style="margin:0 0 3px;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,249,239,0.40);">CLIENT</p>
                       <p style="margin:0;font-size:13px;color: #fff9ef;">${firstName} ${lastName}</p>
-                    </td>
-                    <td width="50%">
-                      <p style="margin:0 0 3px;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,249,239,0.40);">TYPE</p>
-                      <p style="margin:0;font-size:13px;color: #fff9ef;">${type}</p>
                     </td>
                   </tr>
                   <tr>

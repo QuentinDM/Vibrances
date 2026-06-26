@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SectionHeader from "../components/SectionHeader";
+import ProfilPics from "../../public/profil-picture.jpeg"
 import Seo from "../components/Seo";
 
 export function About() {
@@ -34,11 +35,8 @@ export function About() {
         <div className="about-photo">
           <div className="photo-frame">
             <div className="photo-bg-shape" />
-            <div className="photo-placeholder">
-              <i className="fa-solid fa-user" aria-hidden="true"></i>
-              <span>VOTRE PHOTO</span>
+              <img className="photo-placeholder" src={ProfilPics} alt="photo de florence"/>
             </div>
-          </div>
         </div>
       </section>
 

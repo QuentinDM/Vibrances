@@ -15,7 +15,7 @@ export function LegalNotice() {
           <p><strong>Forme juridique :</strong> Micro-entreprise</p>
           <p><strong>SIRET :</strong> //...//</p>
           <p><strong>Code APE (NAF) :</strong> //...//</p>
-          <p><strong>Courriel :</strong> <a href="mailto:flodelma82@gmail.com" className="legal-link">flodelma82@gmail.com</a></p>
+          <p><strong>Courriel :</strong> <a href="mailto:vibrances82@gmail.com" className="legal-link">vibrances82@gmail.com</a></p>
           <p><strong>Téléphone :</strong> 06.16.27.69.17</p>
 
           <p>Notre site est conforme au <strong>RGPD</strong> (Règlement Général sur la Protection des Données) RÈGLEMENT du PARLEMENT EUROPÉEN (UE) 2016/679 et du CONSEIL de l'EUROPE du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données.</p>

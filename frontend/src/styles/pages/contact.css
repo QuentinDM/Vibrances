@@ -21,7 +21,6 @@
 }
 
 .calendar-ui h4 {
-  font-size: 1.1rem;
   margin: 16px 0;
   color: var(--b65);
   text-align: center;
@@ -297,20 +296,18 @@
 
 .cs-info-card__icon i {
     color: #46131e;
-    font-size: 18px;
     line-height: 1;
   }
 
 .cs-info-card__value {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
     font-weight: 600;
     color: #46131e;
     letter-spacing: 0.02em;
   }
 
 .cs-info-card__desc {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: rgba(70,19,30,0.50);
   }
@@ -329,13 +326,12 @@
 
 .cs-legal i {
     color: rgba(70,19,30,0.40);
-    font-size: 15px;
     line-height: 1;
     flex-shrink: 0; margin-top: 1px;
   }
 
 .cs-legal__text {
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 1.65;
     color: rgba(70,19,30,0.50);
     letter-spacing: 0.01em;
@@ -349,7 +345,7 @@
   }
 
 .cs-legal__link {
-    font-size: 0.73rem;
+    font-size: 1rem;
     font-weight: 500;
     color: rgba(70,19,30,0.55);
     text-decoration: none;
@@ -376,7 +372,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 

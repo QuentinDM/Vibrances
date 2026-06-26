@@ -11,10 +11,6 @@
   border-bottom: hsl(36deg 36% 52% / 25%) 1px solid;
 }
 
-.text-intro p {
-  font-size: 21px;
-}
-
 .ps-grid {
   max-width: 1100px;
   margin: 0 auto;

@@ -10,7 +10,7 @@ export function PrivacyPolicy() {
         <div className="legal-container">
           <h2>Responsable du traitement</h2>
           <p><strong>VIBRANCES</strong></p>
-          <p>Email : flodelma82@gmail.com</p>
+          <p>Email : vibrances82@gmail.com</p>
 
           <h2>1 - Données collectées</h2>
           <p>VIBRANCES collecte uniquement les données strictement nécessaires au traitement de vos demandes de contact, notamment :</p>
@@ -57,7 +57,7 @@ export function PrivacyPolicy() {
           <p>VIBRANCES se réserve le droit de modifier cette politique de confidentialité à tout moment. Les modifications seront publiées sur cette page.</p>
 
           <h2>9 - Contact</h2>
-          <p>Pour toute question concernant la gestion de vos données, contactez-nous à <strong>flodelma82@gmail.com</strong>.</p>
+          <p>Pour toute question concernant la gestion de vos données, contactez-nous à <strong>vibrances82@gmail.com</strong>.</p>
         </div>
       </section>
     </>
