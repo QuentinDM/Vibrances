@@ -13,7 +13,7 @@ export function LegalNotice() {
           <p><strong>Raison sociale :</strong> Vibrances</p>
           <p><strong>Siège social :</strong> 6635 route du lemboulas 82220 Molières</p>
           <p><strong>Forme juridique :</strong> Micro-entreprise</p>
-          <p><strong>SIRET :</strong> //...//</p>
+          <p><strong>SIRET :</strong> 10754584000012</p>
           <p><strong>Code APE (NAF) :</strong> //...//</p>
           <p><strong>Courriel :</strong> <a href="mailto:vibrances82@gmail.com" className="legal-link">vibrances82@gmail.com</a></p>
           <p><strong>Téléphone :</strong> 06.16.27.69.17</p>
