@@ -1,4 +1,4 @@
-const BOOK_URL = "https://librairie.bod.fr/le-bruit-que-fait-ma-bouche-florence-mistral-9782322841363";
+const BOOK_URL = "https://librairie.bod.fr/le-bruit-que-fait-ma-bouche-florence-mistral-9782322737062";
 const BOOK_COVER = "/Le_bruit_que_fait_ma_bouche.webp";
 
 export function Book() {

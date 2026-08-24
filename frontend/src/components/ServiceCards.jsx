@@ -22,7 +22,7 @@ export function ServiceCards() {
             <i className="fa-solid fa-compact-disc" aria-hidden="true"></i>
           </div>
           <h3 className="card-title">Paroles et composition de chanson</h3>
-          <p className="card-desc">Transformation d'un récit, d'un poème ou d'un souvenir en <b>chanson personnalisé</b>, portée par une plume littéraire et une <b>composition originale</b>. Idéal pour un <b>mariage</b>, un cadeau unique ou un projet artistique.</p>
+          <p className="card-desc">Transformation d'un récit, d'un poème ou d'un souvenir en <b>chanson personnalisée</b>, portée par une plume littéraire et une <b>composition originale</b>. Idéal pour un <b>mariage</b>, un cadeau unique ou un projet artistique.</p>
           <Link to="/contact" className="card-link">
             En savoir plus
             <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>

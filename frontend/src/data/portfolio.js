@@ -39,7 +39,7 @@ export const portfolioProjects = [
     category: "collaborations",
     label: "Collaboration",
     excerpt:
-      "Un accompagnement en marque blanche pour une structure partenaire — pompes funèbres, wedding planner, Che(fe) d'entreprise, CSE, Officiant quel qu’il soit. Des textes et chansons personnalisées livrées sous son nom, en toute discrétion, pour enrichir son offre sans exposer la sous-traitance.",
+      "Un accompagnement en marque blanche pour une structure partenaire — pompes funèbres, wedding planner, Che(fe) d'entreprise, CSE, Officiant quel qu’il soit. Des textes et chansons personnalisés livrés sous son nom, en toute discrétion, pour enrichir son offre sans exposer la sous-traitance.",
   },
   {
     name: "Discours d'hommage pour un dernier aurevoir",
