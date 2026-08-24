@@ -1,5 +1,5 @@
-import logoImage from "../../public/logo-vibrances.png";
-import music from '../../public/poeme-concours.mp3';
+const logoImage = "/logo-vibrances.png";
+const music = "/poeme-concours.mp3";
 
 export function AudioFeature({ showStreamingLinks = false }) {
   return (

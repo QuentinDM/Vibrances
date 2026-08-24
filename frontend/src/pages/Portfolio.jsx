@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AudioFeature from "../components/AudioFeature";
+import Book from "../components/Book";
 import ProjectCard from "../components/ProjectCard";
 import SectionHeader from "../components/SectionHeader";
 import Seo from "../components/Seo";
@@ -30,6 +31,7 @@ export function Portfolio() {
           Quelques exemples de <b>textes sur mesure</b> et de <b>chansons personnalisées</b> réalisés pour des particuliers et des structures partenaires, <br /> Tarn et Garonne , Occitanie, et autres régions de France.
         </p>
       </div>
+      <Book />
       <AudioFeature showStreamingLinks />
       <section className="section-portfolio">
         <div className="section-inner">

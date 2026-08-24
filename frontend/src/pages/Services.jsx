@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import SectionHeader from "../components/SectionHeader";
 import Seo from "../components/Seo";
 import ServiceCards from "../components/ServiceCards";
-import illustrationImg from "../../public/illustration-image.webp"
+const illustrationImg = "/illustration-image.webp";
 
 export function Services() {
   return (
@@ -58,7 +58,7 @@ export function Services() {
           <div className="mission-right">
             <div className="mission-img-frame">
               <img src="/vibrances-service-placeholder.svg" alt="Illustration visuelle de service" />
-              <span className="img-label"><img src={illustrationImg} alt="" srcset="" /></span>
+              <span className="img-label"><img src={illustrationImg} alt="" /></span>
             </div>
           </div>
         </div>

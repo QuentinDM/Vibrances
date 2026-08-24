@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SectionHeader from "../components/SectionHeader";
-import ProfilPics from "../../public/profil-picture.jpeg"
+const ProfilPics = "/profil-picture.jpeg";
 import Seo from "../components/Seo";
 
 export function About() {

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const BANNER_MAP = {
   textes: {
     bannerClass: "ps-banner-text",
@@ -29,10 +31,10 @@ export function ProjectCard({ project }) {
         <span className={`ps-cat ${catClass}`}>{project.label}</span>
         <h3 className="ps-card-title">{project.name}</h3>
         <p className="ps-card-desc">{project.excerpt}</p>
-        <a className="card-link" href="/contact">
+        <Link className="card-link" to="/contact">
           En savoir plus
           <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-        </a>
+        </Link>
       </div>
     </article>
   );

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../public/logo-vibrances-ecrit.png"//../../../src/logo-vibrances-ecrit.png
+const logo = "/logo-vibrances-ecrit.png";
 
 export function Header() {
   const [open, setOpen] = useState(false);

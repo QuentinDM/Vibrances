@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import AudioFeature from "../components/AudioFeature";
+import Book from "../components/Book";
 import Seo from "../components/Seo";
 import ServiceCards from "../components/ServiceCards";
 
@@ -34,6 +35,8 @@ export function Home() {
           </svg>
         </div>
       </section>
+
+      <Book />
 
       <section className="services-overview">
         <p className="eyebrow">Services</p>

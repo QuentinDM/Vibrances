@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import CalendarPicker from "../components/CalendarPicker";
 import ScheduleMeetingForm from "../components/ScheduleMeetingForm";
 import SectionHeader from "../components/SectionHeader";
@@ -84,8 +85,8 @@ export function Contact() {
                   En envoyant ce formulaire, vous acceptez que vos données soient utilisées uniquement dans le cadre de votre demande de contact. Aucune donnée n'est vendue ou partagée.
                 </p>
                 <div className="cs-legal__links">
-                  <a href="/mentions-legales" className="cs-legal__link">Mentions légales</a>
-                  <a href="/confidentialite" className="cs-legal__link">Politique de confidentialité</a>
+                  <Link to="/mentions-legales" className="cs-legal__link">Mentions légales</Link>
+                  <Link to="/confidentialite" className="cs-legal__link">Politique de confidentialité</Link>
                 </div>
               </div>
           </div>

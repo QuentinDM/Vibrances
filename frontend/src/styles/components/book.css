@@ -1,0 +1,103 @@
+.book-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  align-items: center;
+  gap: clamp(42px, 8vw, 120px);
+  padding: clamp(72px, 9vw, 128px) max(24px, 7vw);
+  background: linear-gradient(160deg, rgba(70, 19, 30, 0.04) 0%, transparent 60%);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.book-feature__content {
+  max-width: 760px;
+}
+
+.book-feature .eyebrow {
+  margin-bottom: 18px;
+  color: var(--gold);
+  text-align: left;
+}
+
+.book-feature h2 {
+  max-width: 680px;
+  margin-bottom: 24px;
+  color: var(--bordeaux);
+  font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+}
+
+.book-feature__quote {
+  max-width: 620px;
+  margin-bottom: 30px;
+  color: var(--bordeaux-dark);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.45rem, 2.7vw, 2.25rem);
+  font-style: italic;
+  line-height: 1.15;
+}
+
+.book-feature__text {
+  max-width: 68ch;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.book-feature__text p + p {
+  margin-top: 16px;
+}
+
+.book-feature__text em {
+  color: var(--bordeaux);
+}
+
+.book-feature__button {
+  margin-top: 34px;
+}
+
+.book-feature__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.book-feature__visual img {
+  width: min(100%, 340px);
+  aspect-ratio: 0.665 / 1;
+  object-fit: cover;
+  box-shadow: 18px 22px 0 rgba(255, 249, 239, 0.12), 0 26px 54px rgba(0, 0, 0, 0.28);
+  transform: rotate(2deg);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.book-feature__visual img:hover {
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: 14px 18px 0 rgba(255, 249, 239, 0.16), 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 760px) {
+  .book-feature {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 72px 24px 88px;
+  }
+
+  .book-feature .eyebrow {
+    text-align: left;
+  }
+
+  .book-feature__visual {
+    order: -1;
+  }
+
+  .book-feature__visual img {
+    width: min(72vw, 300px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-feature__visual img {
+    transition: none;
+    transform: none;
+  }
+}
