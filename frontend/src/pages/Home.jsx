@@ -14,11 +14,10 @@ export function Home() {
         <div className="hero-bg" />
 
         <div className="hero-content">
-          <p className="eyebrow">Auteure-compositrice SACEM · Marque blanche possible</p>
+          <p className="eyebrow">Autrice et parolière SACEM · Marque blanche possible</p>
           <h1 className="hero-title">L'écriture au service des maux</h1>
           <p className="hero-subtitle">
-            VIBRANCES accompagne les structures prescriptrices avec des textes sensibles et des chansons
-            sur mesure, pour transformer les récits intimes en paroles justes.
+            VIBRANCES accompagne les structures prescriptrices avec des textes sensibles et des chansons personnalisées, pour transformer les récits intimes en paroles justes.
           </p>
           <div className="button-row">
             <Link className="btn btn-primary" to="/contact">Prendre contact</Link>

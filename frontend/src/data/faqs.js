@@ -17,11 +17,11 @@ export const faqs = [
   {
     question: "Comment sont gérés les droits SACEM ?",
     answer:
-      "Florence est auteure-compositrice SACEM. Les usages, diffusions et droits associés devront être précisés selon le projet musical concerné.",
+      "Florence est une autrice et parolière sous le nom Misdelma SACEM. Les usages, diffusions et droits associés devront être précisés selon le projet musical concerné.",
   },
   {
     question: "Le site s'adresse-t-il aussi aux particuliers ?",
     answer:
-      "Oui, mais la cible principale reste B2B. Les particuliers peuvent toutefois déposer une demande via le formulaire de contact.",
+      "Oui, Les particuliers peuvent déposer une demande via le formulaire de contact.",
   },
 ];

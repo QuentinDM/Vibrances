@@ -73,7 +73,8 @@ export function Contact() {
               </div>
               <span className="cs-info-card__value">Montauban, France</span>
             </div>
-            <p className="cs-info-card__desc">Basée à Montauban, j'interviens partout en France et à distance.</p>
+            <p className="cs-info-card__desc">Tarn et Garonne, France
+              Basée dans la région Occitanie, j'interviens partout en France et à distance.</p>
           </div>
 
           <div className="cs-legal">

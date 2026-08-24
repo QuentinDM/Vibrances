@@ -16,15 +16,15 @@ export function About() {
       <section className="about-section">
         <div className="about-text">
           <span className="tag">Je suis Florence</span>
-          <h2>Auteure-compositrice,<br />basée à Montauban</h2>
+          <h2>Autrice et Parolière,<br />basée dans le Tarn et Garonne, Occitanie - France.</h2>
           <p>
-            Je suis Florence Mistral, <b>auteure-compositrice</b> inscrite à la SACEM et fondatrice de VIBRANCES. J'écris des <b>textes sur mesure</b> et des <b>chansons personnalisées</b> pour accompagner les moments importants de la vie.
+            Je suis Florence Mistral, <b>Autrice et Parolière</b> sous le nom de Misdelma inscrite à la SACEM et fondatrice de VIBRANCES. J'écris des <b>textes sur mesure</b> et des <b>chansons personnalisées</b> pour accompagner les moments importants de la vie.
             <br />
             <br />
-            Mon métier, c'est de mettre en mots ce qui compte : un <b>hommage</b>, un <b>discours de cérémonie</b>, des vœux de <b>mariage</b>, ou une <b>chanson</b> née d'un récit et d'un souvenir. À travers une approche sensible et attentive, j'aide particuliers et professionnels à dire l'essentiel, avec justesse, écoute et authenticité.
+            Mon métier, est de mettre en mots ce qui compte : un <b>hommage</b>, un <b>discours de cérémonie</b>, des vœux de <b>mariage</b>, ou une <b>chanson</b> née d'un récit et d'un souvenir. À travers une approche sensible et attentive, j'aide particuliers et professionnels à dire l'essentiel, avec justesse, écoute et authenticité.
             <br />
             <br />
-            J'accompagne aussi des partenaires — <b>pompes funèbres, wedding planners, officiants, CSE et EHPAD</b> — grâce à des offres en <b>marque blanche</b>, pour enrichir leur catalogue de créations sur mesure et humaines, à <b>Montauban</b>, à <b>Toulouse</b> et partout en <b>Occitanie</b>
+            J'accompagne aussi des partenaires — <b>pompes funèbres, wedding planners, officiants, chef(fe) d'entreprise, CSE et EHPAD</b> — grâce à des offres en <b>marque blanche</b>, pour enrichir leur catalogue de créations sur mesure et humaines, dans le Tarn et Garonne, Occitanie et partout en France.
           </p>
           <div className="btn-group">
             <Link className="btn btn-primary" to="/services">Mes services</Link>
@@ -82,13 +82,13 @@ export function About() {
             <div className="story-block highlight">
               <span className="story-number">01</span>
               <h3>L'origine de ma passion pour l'écriture</h3>
-              <p>L'écriture m'accompagne depuis toujours. Avant d'en faire un métier, j'écrivais pour comprendre, relier et dire ce qui se tait. C'est en mesurant l'effet d'un <b>texte sur mesure</b> pour celles et ceux qui le reçoivent que ma vocation <b>d'écrivain à Montauban</b> s'est imposée : mettre les mots au service des émotions et des moments qui comptent.
+              <p>L'écriture m'accompagne depuis toujours. Avant d'en faire un métier, j'écrivais pour comprendre, relier et dire ce qui se tait. C'est en mesurant l'effet d'un <b>texte sur mesure</b> pour celles et ceux qui le reçoivent que ma vocation <b>dans le Tarn et Garonne</b> s'est imposée : mettre les mots au service des émotions et des moments qui comptent.
               </p>
             </div>
             <div className="story-block">
               <span className="story-number">02</span>
               <h3>Une approche centrée sur l'humain</h3>
-              <p>Chaque projet <b>d'écriture personnalisée</b> commence par une écoute. Avant de rédiger un <b>hommage</b>, un <b>discours de cérémonie</b> ou des <b>paroles de chanson</b>, je cherche à comprendre votre histoire et votre intention. Je ne plaque jamais de formules toutes faites : je façonne des textes fidèles à ce que vous vivez et souhaitez transmettre.
+              <p>Chaque projet <b>d'écriture personnalisée</b> commence par une écoute. Avant de rédiger un <b>hommage</b>, un <b>discours de cérémonie</b> ou des <b>paroles de chanson</b>, je cherche à comprendre votre histoire et votre intention. Je ne calque jamais de formules toutes faites : je façonne des textes fidèles à ce que vous vivez, ressentez et souhaitez transmettre.
               </p>
             </div>
             <div className="story-block">
@@ -100,7 +100,7 @@ export function About() {
             <div className="story-block">
               <span className="story-number">04</span>
               <h3>Collaborer, co-créer, livrer</h3>
-              <p>Écrire pour vous, c'est écrire avec vous. J'avance par allers-retours jusqu'à ce que le texte vous ressemble. Pour un particulier comme pour une structure partenaire — <b>wedding planner, officiant de cérémonie, pompes funèbres ou comité d'entreprise (CSE)</b> — je m'engage sur un rendu clair, dans les délais convenus, prêt à être lu, dit ou chanté.</p>
+              <p>Écrire pour vous, c'est écrire avec vous. J'avance par allers-retours jusqu'à ce que le texte vous ressemble. Pour un particulier comme pour une structure professionnel: <b>chef(fe) d'entreprise, wedding planner, officiant de cérémonie, pompes funèbres ou comité d'entreprise (CSE).</b>. je m'engage sur un rendu clair, dans les délais convenus, prêt à être lu, dit ou chanté.</p>
             </div>
           </div>
 
@@ -113,7 +113,7 @@ export function About() {
 
           <div className="services-cta" id="services">
             <p>
-              Vous souhaitez en savoir plus sur ce que je peux faire pour vous ?<br />
+              Vous souhaitez en savoir plus ?<br />
               Découvrez l'ensemble de mes services et trouvons ensemble ce dont vous avez besoin.
             </p>
             <Link className="btn btn-services" to="/services">

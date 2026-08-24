@@ -27,7 +27,7 @@ export function Portfolio() {
       />
       <div className="text-intro">
         <p>
-          Quelques exemples de <b>textes sur mesure</b> et de <b>chansons personnalisées</b> réalisés pour des particuliers et des structures partenaires, <br /> à Montauban, Occitanie, et autres régions de France.
+          Quelques exemples de <b>textes sur mesure</b> et de <b>chansons personnalisées</b> réalisés pour des particuliers et des structures partenaires, <br /> Tarn et Garonne , Occitanie, et autres régions de France.
         </p>
       </div>
       <AudioFeature showStreamingLinks />

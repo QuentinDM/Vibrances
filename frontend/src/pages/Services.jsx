@@ -8,7 +8,7 @@ export function Services() {
   return (
     <>
       <Seo
-        title="Services — Sophia"
+        title="Services - Misdelma"
         description="Une gamme de services créatifs : identité de marque, design de logo et design d'emballage, portée par la palette VIBRANCES."
       />
 
@@ -39,11 +39,11 @@ export function Services() {
               créatives
             </h2>
             <p>
-              Derrière chaque demande, il y a une intention : honorer une mémoire, célébrer un <b>mariage</b>, marquer un <b>départ en retraite</b> ou offrir des mots justes lors de <b>funérailles</b>. VIBRANCES transforme ces intentions en <b>textes sur mesure</b> et en <b>chansons personnalisées</b>, écrits pour résonner auprès de celles et ceux qui les reçoivent, à <b>Montauban</b>, à <b>Toulouse</b> et partout en <b>Occitanie</b>.
+              Derrière chaque demande, il y a une intention : honorer une mémoire, célébrer un <b>mariage</b>, marquer un <b>départ en retraite</b> ou offrir des mots justes lors de <b>funérailles</b>. VIBRANCES transforme ces intentions en <b>textes sur mesure</b> et en <b>chansons personnalisées</b>, écrits pour résonner auprès de celles et ceux qui les reçoivent, partout en <b>France</b>.
             </p>
 
             <p>
-              <b>Pompes funèbres, wedding planners, officiants de cérémonie, CSE, EHPAD</b> ou structures d'accueil : j'enrichis votre offre sans alourdir votre charge. Vous restez l'interlocuteur de vos clients ; j'apporte la plume, en <b>marque blanche</b> si vous le souhaitez, avec la discrétion qu'exige l'intime.
+              <b>Pompes funèbres, wedding planners, officiants de cérémonie, che(fe) d'entreprise, CSE, EHPAD</b> ou structures d'accueil : j'enrichis votre offre sans alourdir votre charge. Vous restez l'interlocuteur de vos clients ; j'apporte la plume, en <b>marque blanche</b> si vous le souhaitez, avec la discrétion qu'exige l'intime.
             </p>
 
             <p>

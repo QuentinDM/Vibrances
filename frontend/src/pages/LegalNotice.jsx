@@ -11,8 +11,8 @@ export function LegalNotice() {
         <div className="legal-container">
           <p><strong>Responsable :</strong> Florence DELLA MATTIA</p>
           <p><strong>Raison sociale :</strong> Vibrances</p>
-          <p><strong>Siège social :</strong> 6635 route du lemboulas 82220 Molières</p>
-          <p><strong>Forme juridique :</strong> Micro-entreprise</p>
+          <p><strong>Siège social :</strong> Tarn et Garonne</p>
+          <p><strong>Forme juridique :</strong> IE - Entreprise individuelle</p>
           <p><strong>SIRET :</strong> 10754584000012</p>
           <p><strong>Code APE (NAF) :</strong>9003B</p>
           <p><strong>Courriel :</strong> <a href="mailto:vibrances82@gmail.com" className="legal-link">vibrances82@gmail.com</a></p>
